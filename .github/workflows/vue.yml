@@ -27,8 +27,8 @@ jobs:
       - run: npm install
       - name: Building the project
       - run: npm run build
-    uses: wei/curl@master
-      with:
-        username: 'suraj-shyplite'
-        reponame: 'test.git'
-        token: ${{ secrets.GITHUB_TOKEN }} # Leave this line unchanged
+      - uses: wei/curl@master
+        with:
+          username: 'suraj-shyplite'
+          reponame: 'test.git'
+          token: ${{ secrets.GITHUB_TOKEN }} # Leave this line unchanged
